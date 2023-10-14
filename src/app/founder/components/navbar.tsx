@@ -1,16 +1,45 @@
 import Link from "next/link";
+import Image from 'next/image'
+import { BiSolidMessage} from "react-icons/bi";
+import { IoMdNotifications } from "react-icons/io"
 
 const Navbar = () => {
   return (
-    <nav className="bg-black-500 border-b border-slate-600 p-4">
-      <div className="mx-auto flex items-center justify-between">
-        <Link href="/" passHref>
-          <p className="ml-2 mr-8 text-xl font-semibold text-white md:ml-6 lg:ml-8">
-            Sparket
-          </p>
-        </Link>
-      </div>
-    </nav>
+    <div className='container mx-auto flex justify-between items-center bg-black-500 border-b border-slate-600'>
+      <a href='/founderHome'>
+        <Image className='py-3'
+          src="/images/placeholder.png"
+          alt="Example Image"
+          width={100}
+          height={50}
+        />
+      </a>
+      <div className="flex-grow"></div>
+      <ul className="flex items-center space-x-4">
+        <li>
+          <a href="/founderMyPosts" className="hover:text-gray-600">My Posts</a>
+        </li>
+        <li>
+          <a href="/founderCreatePost" className="hover:text-gray-600 pr-8">Create post</a>
+        </li>
+      </ul>
+      <h1>
+        <IoMdNotifications className = "h-7 w-7"/>
+      </h1>
+      <h1 className="px-5" >
+        <BiSolidMessage className = "h-7 w-7"/>
+      </h1>
+      <a href='/'>
+        <Image className=''
+          src="/images/placeholder.png"
+          alt="Example Image"
+          width={50}
+          height={50}
+        />
+      </a>
+    </div>
+
+
   );
 };
 
