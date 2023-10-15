@@ -21,7 +21,7 @@ const myPosts = () => {
             <div>
               <Link href="/founder/payout">
                 <button className="bg-primary p-2 rounded-full">
-                  Payout Investor
+                  Pay out Investor
                 </button>
               </Link>
             </div>

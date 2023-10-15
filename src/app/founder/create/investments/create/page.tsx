@@ -9,14 +9,18 @@ import Navbar from "../../components/navbar";
 import Link from "next/link";
 
 const NewInvestment: NextPage = () => {
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [workType, setWorkType] = useState("");
-  const [workDescription, setWorkDescription] = useState("");
-  const [skills, setSkills] = useState<string[]>([""]);
+  const [title, setTitle] = useState("Devlink");
+  const [description, setDescription] = useState(
+    "An AI blog maker for your github commits"
+  );
+  const [workType, setWorkType] = useState("Web Developer");
+  const [workDescription, setWorkDescription] = useState(
+    "I am looking for someone to make me a website"
+  );
+  const [skills, setSkills] = useState<string[]>(["react", "typescript"]);
 
-  const [percent, setPercent] = useState("");
-  const [totalPayout, setTotalPayout] = useState("");
+  const [percent, setPercent] = useState("10");
+  const [totalPayout, setTotalPayout] = useState("5000");
   const [payoutFrequency, setPayoutFrequency] = useState("Monthly");
 
   return (
