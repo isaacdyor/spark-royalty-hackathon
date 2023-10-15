@@ -80,3 +80,16 @@
   background-size: 1300% 1300%;
   animation: gradientMove 10s linear infinite;
 }
+
+/* In your CSS or Tailwind CSS */
+.underline {
+  display: block;
+  height: 2px;
+  background-color: #2D3748; /* Or any other color you prefer */
+  width: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.active {
+  width: 100%;
+}
