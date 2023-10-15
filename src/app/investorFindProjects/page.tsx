@@ -48,7 +48,7 @@ const investorFindProjects = () => {
               <p>Total Payout: $5,000</p>
             </div>
             <div>
-            <Link href='/investorMyApplications'>
+            <Link href='/investorWhyProject'>
               <button className="bg-primary p-2 rounded-full">
                 Apply Now
               </button>
